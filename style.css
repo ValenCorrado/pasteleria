@@ -75,6 +75,11 @@ a {
 }
 
 /* ESTILOS NAVBAR BTS */
+
+#navbarNav{
+    padding-left: 470px;
+}
+
 .navBar__img {
     width: 80px;
     height: 80px;
@@ -90,7 +95,7 @@ a {
 }
 
 .navbar-brand{
-    padding-left: 200px;
+    padding-left: 130px;
 }
 
 /*ESTILOS MAIN*/
@@ -239,8 +244,12 @@ a {
     font-size: 20px;
 }
 
+.footer-links{
+    text-align: center;
+}
+
 .footer-links ul li {
-    display: inline;
+    display: inline-block;
     list-style: none;
     font-size: 24px;
     margin-right: 5px;
@@ -249,4 +258,31 @@ a {
 .footer-redes img {
     width: 40px;
     margin-left: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 991px ) {
+    .navbar-brand{
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 444px ) {
+    #main .main-muestra img {
+        width: 150px;
+        margin-bottom: 10px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 420px ){
+    #footer {
+        width: 100%;
+        height: 190px;
+        background-color: #503c2f;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
