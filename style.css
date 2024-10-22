@@ -51,30 +51,13 @@ a {
 }
 /*ESTILOS HEADER/NAV*/
 
+
+/* ESTILOS HEADER/NAVBAR BTS */
 #header {
     max-width: 2000px;
     height: 100px;
     background-color:#503c2f;
 }
-
-#navBar {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: #ffedd3;
-}
-
-#navBar .navBar-ul li {
-    margin-left: 10px;
-}
-
-#navBar .navBar-pic img {
-    height: 70px;
-}
-
-/* ESTILOS NAVBAR BTS */
 
 #navbarNav{
     padding-left: 470px;
@@ -131,8 +114,7 @@ a {
     width: 100%;
     justify-content: center;
     font-weight: bold;
-    font-size: 18px; /* PRUEBA */
-    margin-top: 10px;
+    font-size: 18px; 
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: 
@@ -155,20 +137,39 @@ a {
     grid-area: section--paquetes;
 }
 
+.main__section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .mian__section--tortas{
     display: flex;
-    margin: 0px 100px 0px 100px;
+    align-items: flex-start;
+    border: 1px solid #503c2f;
+    padding: 20px;
+    width: 80%;
+}
+
+.mian__section--tortas--picture{
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.main__section--text-content {
+    display:block;
+    text-align: start;
+    margin: 20px;
+}
+
+.main__section--text-content h4{
+    text-decoration: underline overline
 }
 
 .mian__section--tortas--picture img{
     width: 300px;
 }
-
-.mian__section--tortas p {
-    display: flex;
-    align-items: baseline;
-}
-
 /* -------------------------------------------- */
 
 /* ESTILOS GRIALLAS DE IMAGENES */
