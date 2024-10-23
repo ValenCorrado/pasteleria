@@ -1,0 +1,273 @@
+/*
+!important= aplica a las propiedades y pisa a todo jerarquico
+
+#ID=  Unica e irrpetible
+.class= se pueden repetir y usar varias veces
+
+etiquetas/selectores= etiquetas semanticas de html(h1)
+
+*/
+/*selector/id/clase {
+    propiedad: valor;
+}*/
+/*llamdo al doc html*/
+/*estilos reset css*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+  /*     border: 1px blue solid; */
+}
+
+#body {
+    max-width: 2000px;
+    background-color: #ffedd3;
+}
+
+#main {
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*ESTILOS HEADER/NAV*/
+/* ESTILOS HEADER/NAVBAR BTS */
+#header {
+    max-width: 2000px;
+    height: 100px;
+    background-color: #503c2f;
+}
+
+#navbarNav {
+    padding-left: 470px;
+}
+
+.navBar__img {
+    width: 80px;
+    height: 80px;
+}
+
+.nav-link {
+    color: #ffedd3;
+}
+
+.nav-link.active {
+    color: #ffedd3 !important;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    padding-left: 130px;
+}
+
+/*ESTILOS MAIN*/
+#main {
+    min-height: 100vh;
+    text-align: center;
+    color: #503c2f;
+}
+
+#main .main-banner img {
+    margin-top: 10px;
+    background-size: cover;
+}
+
+#main .pie-img p {
+    margin: 30px 50px 30px 50px;
+}
+
+#main .pie-img p a {
+    text-decoration: underline;
+}
+
+#main .main-muestra img {
+    width: 200px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+/* MENU__MAIN */
+#main .main__section--links {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "section--tortas section--cookis . section--chocolates section--paquetes";
+}
+
+.section--tortas {
+    grid-area: section--tortas;
+}
+
+.section--cookis {
+    grid-area: section--cookis;
+}
+
+.section--chocolates {
+    grid-area: section--chocolates;
+}
+
+.section--paquetes {
+    grid-area: section--paquetes;
+}
+
+.main__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mian__section--tortas {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #503c2f;
+    padding: 20px;
+    width: 80%;
+}
+
+.mian__section--tortas--picture {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.main__section--text-content {
+    display: block;
+    text-align: start;
+    margin: 20px;
+}
+
+.main__section--text-content h4 {
+    text-decoration: underline overline;
+}
+
+.mian__section--tortas--picture img {
+    width: 300px;
+}
+
+/* -------------------------------------------- */
+/* ESTILOS GRIALLAS DE IMAGENES */
+.section__grid {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: "torta1       torta2      torta2      torta3" "torta4       torta4      torta5      torta5" "torta6       torta6      torta7      torta8";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+/* 1fr partes en las que se divide el width  (max 12 columnas)*/
+.section__grid img {
+    width: 100%;
+    height: 100%;
+}
+
+.torta1 {
+    grid-area: torta1;
+    background-image: url("images/torta1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.torta2 {
+    grid-area: torta2;
+    background-image: url("images/torta1.jpg");
+    background-size: cover;
+}
+
+.torta3 {
+    grid-area: torta3;
+}
+
+.torta4 {
+    grid-area: torta4;
+}
+
+.torta5 {
+    grid-area: torta5;
+}
+
+/* ----------------------------- */
+/*ESTILOS FOOTER*/
+#footer {
+    width: 100%;
+    height: 160px;
+    background-color: #503c2f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*.footer-links,
+.footer-logo{
+    align-self:;
+}*/
+.footer-logo img {
+    width: 80px;
+}
+
+.footer-links ul, .footer-links-autor {
+    text-align: center;
+    color: rgb(255, 237, 211);
+}
+
+.footer-links-autor h3, h4 {
+    font-size: 20px;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.footer-redes img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 991px) {
+    .navbar-brand {
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 444px) {
+    #main .main-muestra img {
+        width: 150px;
+        margin-bottom: 10px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 420px) {
+    #footer {
+        width: 100%;
+        height: 190px;
+        background-color: #503c2f;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
