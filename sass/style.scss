@@ -34,7 +34,6 @@ etiquetas/selectores= etiquetas semanticas de html(h1)
 #body {
     max-width: 2000px;
     background-color: #ffedd3;
-
 }
 
 #main {
@@ -235,22 +234,25 @@ a {
 /* ESTILOS GRIALLAS DE IMAGENES */
 .section__grid {
     display: grid;
-    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto; /* Asegura que el grid esté centrado */
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 200px);
-    grid-template-areas:
-            /* col1 */  /* col2 */  /* col3 */  /* col4 */
-    /*fila1*/"torta1       torta2      torta2      torta3"
-    /*fila2*/"torta4       torta4      torta5      torta5"
-    /*fila3*/"torta6       torta6      torta7      torta8"
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+        "torta1 torta2 torta2 torta3"
+        "torta4-v torta6 torta8 torta5-v"
+        "torta4-v torta6 torta7 torta5-v"
     ;
-    column-gap: 10px;
-    row-gap: 10px;
+    padding: 20px 0px 20px 0px;
+    gap: 20px;
 }
 /* 1fr partes en las que se divide el width  (max 12 columnas)*/
 .section__grid img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .torta1{
     grid-area: torta1;
@@ -268,11 +270,11 @@ a {
 .torta3{
     grid-area: torta3;
 }
-.torta4{
-    grid-area: torta4;
+.torta4-v{
+    grid-area: torta4-v;
 }
-.torta5{
-    grid-area: torta5;
+.torta5-v{
+    grid-area: torta5-v;
 }
 
 /* ----------------------------- */
