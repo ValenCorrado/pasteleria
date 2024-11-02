@@ -1,0 +1,28 @@
+/* ESTILOS NAVBAR/HEADER */
+#header {
+    max-width: 2000px;
+    height: 100px;
+    background-color:#503c2f;
+}
+
+#navbarNav{
+    padding-left: 470px;
+}
+
+.navBar__img {
+    width: 80px;
+    height: 80px;
+}
+
+.nav-link{
+    color: #ffedd3 ;
+}
+
+.nav-link.active{
+    color: #ffedd3 !important;
+    font-weight: bold;
+}
+
+.navbar-brand{
+    padding-left: 130px;
+}

@@ -1,0 +1,39 @@
+/*ESTILOS FOOTER*/
+
+#footer {
+    width: 100%;
+    height: 160px;
+    background-color: #503c2f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-logo img {
+    width: 80px;
+}
+
+.footer-links ul , .footer-links-autor {
+    text-align: center;
+    color: rgb(255, 237, 211);
+}
+
+.footer-links-autor h3 ,h4{
+    font-size: 20px;
+}
+
+.footer-links{
+    text-align: center;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.footer-redes img {
+    width: 40px;
+    margin-left: 10px;
+}

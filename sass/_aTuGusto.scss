@@ -1,0 +1,52 @@
+/* ESTILOS GRIALLAS DE IMAGENES */
+
+.section__grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;               /* Asegura que el grid esté centrado */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+        "torta1 torta2 torta2 torta3"
+        "torta4-v torta6 torta8 torta5-v"
+        "torta4-v torta6 torta7 torta5-v"
+    ;
+    padding: 20px 0px 20px 0px;
+    gap: 20px;
+}
+/* 1fr partes en las que se divide el width  (max 12 columnas)*/
+
+.section__grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.torta1{
+    grid-area: torta1;
+    background-image: url("images/torta1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.torta2{
+    grid-area: torta2;
+    background-image: url("images/torta1.jpg");
+    background-size: cover;
+    
+}
+
+.torta3{
+    grid-area: torta3;
+}
+
+.torta4-v{
+    grid-area: torta4-v;
+}
+
+.torta5-v{
+    grid-area: torta5-v;
+}

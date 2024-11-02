@@ -12,7 +12,7 @@ etiquetas/selectores= etiquetas semanticas de html(h1)
     propiedad: valor;
 }*/
 /*llamdo al doc html*/
-/*estilos reset css*/
+/* ESTILOS RESET */
 * {
   margin: 0;
   padding: 0;
@@ -41,8 +41,7 @@ a {
   color: inherit;
 }
 
-/*ESTILOS HEADER/NAV*/
-/* ESTILOS HEADER/NAVBAR BTS */
+/* ESTILOS NAVBAR/HEADER */
 #header {
   max-width: 2000px;
   height: 100px;
@@ -71,7 +70,7 @@ a {
   padding-left: 130px;
 }
 
-/*ESTILOS MAIN*/
+/* ESTILOS MAIN */
 #main {
   min-height: 100vh;
   text-align: center;
@@ -83,6 +82,95 @@ a {
   background-size: cover;
 }
 
+/*ESTILOS FOOTER*/
+#footer {
+  width: 100%;
+  height: 160px;
+  background-color: #503c2f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-logo img {
+  width: 80px;
+}
+
+.footer-links ul, .footer-links-autor {
+  text-align: center;
+  color: rgb(255, 237, 211);
+}
+
+.footer-links-autor h3, h4 {
+  font-size: 20px;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.footer-redes img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+/* MEDIA NAVBAR FOOTER */
+@media screen and (max-width: 991px) {
+  .navbar-brand {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  #footer {
+    width: 100%;
+    height: 190px;
+    background-color: #503c2f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #navbarNav {
+    padding-left: 375px;
+  }
+}
+/* MEDIA INDEX */
+@media screen and (max-width: 444px) {
+  #main .main-muestra img {
+    width: 150px;
+    margin-bottom: 10px;
+    margin: 10px;
+  }
+}
+/* MEDIA MENU */
+@media (max-width: 768px) {
+  .main__section {
+    flex-direction: column;
+  }
+  .mian__section--producto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__section--text-content {
+    text-align: center;
+  }
+  .mian__section--producto-r {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__section--text-content-r {
+    text-align: center;
+  }
+}
+/* ESTILOS INDEX */
 #main .pie-img p {
   margin: 30px 50px 30px 50px;
 }
@@ -97,8 +185,8 @@ a {
   margin: 10px;
 }
 
-/* MENU__MAIN */
-#main .main__section--links {
+/* ESTILOS MENU */
+#main .main__links {
   display: grid;
   width: 100%;
   justify-content: center;
@@ -108,23 +196,20 @@ a {
   grid-template-rows: 1fr;
   grid-template-areas: "section--tortas section--cookis . section--chocolates section--paquetes";
 }
-
-.section--tortas {
+#main .main__links .section--tortas {
   grid-area: section--tortas;
 }
-
-.section--cookis {
+#main .main__links .section--cookis {
   grid-area: section--cookis;
 }
-
-.section--chocolates {
+#main .main__links .section--chocolates {
   grid-area: section--chocolates;
 }
-
-.section--paquetes {
+#main .main__links .section--paquetes {
   grid-area: section--paquetes;
 }
 
+/* CONTENIDO MENU */
 .main__section {
   display: flex;
   align-items: center;
@@ -193,26 +278,6 @@ a {
   height: 300px;
 }
 
-@media (max-width: 768px) {
-  .main__section {
-    flex-direction: column;
-  }
-  .mian__section--producto {
-    flex-direction: column;
-    align-items: center;
-  }
-  .main__section--text-content {
-    text-align: center;
-  }
-  .mian__section--producto-r {
-    flex-direction: column;
-    align-items: center;
-  }
-  .main__section--text-content-r {
-    text-align: center;
-  }
-}
-/* -------------------------------------------- */
 /* ESTILOS GRIALLAS DE IMAGENES */
 .section__grid {
   display: grid;
@@ -258,79 +323,6 @@ a {
 
 .torta5-v {
   grid-area: torta5-v;
-}
-
-/* ----------------------------- */
-/*ESTILOS FOOTER*/
-#footer {
-  width: 100%;
-  height: 160px;
-  background-color: #503c2f;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-/*.footer-links,
-.footer-logo{
-    align-self:;
-}*/
-.footer-logo img {
-  width: 80px;
-}
-
-.footer-links ul, .footer-links-autor {
-  text-align: center;
-  color: rgb(255, 237, 211);
-}
-
-.footer-links-autor h3, h4 {
-  font-size: 20px;
-}
-
-.footer-links {
-  text-align: center;
-}
-
-.footer-links ul li {
-  display: inline-block;
-  list-style: none;
-  font-size: 24px;
-  margin-right: 5px;
-}
-
-.footer-redes img {
-  width: 40px;
-  margin-left: 10px;
-}
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 991px) {
-  .navbar-brand {
-    padding-left: 30px;
-  }
-}
-@media screen and (max-width: 444px) {
-  #main .main-muestra img {
-    width: 150px;
-    margin-bottom: 10px;
-    margin: 10px;
-  }
-}
-@media screen and (max-width: 420px) {
-  #footer {
-    width: 100%;
-    height: 190px;
-    background-color: #503c2f;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-@media screen and (max-width: 1100px) {
-  #navbarNav {
-    padding-left: 375px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

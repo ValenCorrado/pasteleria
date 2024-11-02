@@ -1,0 +1,49 @@
+/*
+!important= aplica a las propiedades y pisa a todo jerarquico
+
+#ID=  Unica e irrpetible
+.class= se pueden repetir y usar varias veces
+
+etiquetas/selectores= etiquetas semanticas de html(h1)
+
+*/
+
+/*selector/id/clase {
+    propiedad: valor;
+}*/
+
+/*llamdo al doc html*/
+
+/* ESTILOS RESET */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+    
+/*     border: 1px blue solid; */
+
+}
+
+
+#body {
+    max-width: 2000px;
+    background-color: #ffedd3;
+}
+
+#main {
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

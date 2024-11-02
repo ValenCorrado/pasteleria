@@ -1,0 +1,101 @@
+/* ESTILOS MENU */
+
+#main {
+    .main__links {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 18px; 
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "section--tortas section--cookis . section--chocolates section--paquetes";
+
+        .section--tortas {
+        grid-area: section--tortas;
+        }
+
+        .section--cookis {
+        grid-area: section--cookis;
+        }
+
+        .section--chocolates {
+        grid-area: section--chocolates;
+        }
+
+        .section--paquetes {
+        grid-area: section--paquetes;
+        }
+    }
+}
+/* CONTENIDO MENU */
+
+.main__section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.mian__section--producto{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 1px solid #503c2f;
+    padding: 20px;
+    width: 80%;
+}
+
+.mian__section--producto--picture{
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.main__section--text-content {
+    display:block;
+    text-align: start;
+    padding: 20px;
+}
+
+.main__section--text-content h4{
+    text-decoration: underline overline
+}
+
+.mian__section--producto--picture img {
+    width: 300px;
+    height: 300px;
+}
+
+.mian__section--producto-r{
+    display: flex;
+    align-items: flex-start     ;
+    border: 1px solid #503c2f;
+    padding: 20px;
+    width: 80%;
+}
+
+.mian__section--producto--picture-r{
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.main__section--text-content-r {
+    display:block;
+    text-align: end;
+    padding: 20px;
+}
+
+.main__section--text-content-r h4{
+    text-decoration: underline overline
+}
+
+
+.mian__section--producto--picture-r img {
+    width: 300px;
+    height: 300px;
+}
