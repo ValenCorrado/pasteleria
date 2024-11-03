@@ -76,7 +76,6 @@ a {
   text-align: center;
   color: #503c2f;
 }
-
 #main .main-banner img {
   margin-top: 10px;
   background-size: cover;
@@ -151,42 +150,47 @@ a {
   }
 }
 /* MEDIA MENU */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .main__section {
     flex-direction: column;
+    justify-content: center;
   }
   .mian__section--producto {
     flex-direction: column;
     align-items: center;
   }
-  .main__section--text-content {
-    text-align: center;
-  }
-  .mian__section--producto-r {
-    flex-direction: column;
+  .mian__section--producto--picture {
     align-items: center;
   }
-  .main__section--text-content-r {
+  .main__section--text-content h4 {
+    text-align: center;
+  }
+  .main__section--text-content p {
     text-align: center;
   }
 }
 /* ESTILOS INDEX */
+#main .pie-img {
+  /* txt de bienvenida */
+}
 #main .pie-img p {
   margin: 30px 50px 30px 50px;
 }
-
 #main .pie-img p a {
   text-decoration: underline;
 }
-
+#main .main-muestra {
+  /* img de mustra */
+}
 #main .main-muestra img {
   width: 200px;
-  margin-bottom: 10px;
   margin: 10px;
+  margin-bottom: 10px;
 }
 
 /* ESTILOS MENU */
 #main .main__links {
+  /* Grids */
   display: grid;
   width: 100%;
   justify-content: center;
@@ -221,17 +225,26 @@ a {
 
 .mian__section--producto {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   border: 1px solid #503c2f;
   padding: 20px;
-  width: 80%;
+  width: 75%;
 }
 
 .mian__section--producto--picture {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   padding: 20px;
+}
+
+.mian__section--producto--picture img {
+  width: 100%;
+  min-width: 160px;
+  height: auto;
+  display: block;
 }
 
 .main__section--text-content {
@@ -242,40 +255,11 @@ a {
 
 .main__section--text-content h4 {
   text-decoration: underline overline;
+  padding-bottom: 20px;
 }
 
-.mian__section--producto--picture img {
-  width: 300px;
-  height: 300px;
-}
-
-.mian__section--producto-r {
-  display: flex;
-  align-items: flex-start;
-  border: 1px solid #503c2f;
-  padding: 20px;
-  width: 80%;
-}
-
-.mian__section--producto--picture-r {
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
-}
-
-.main__section--text-content-r {
-  display: block;
-  text-align: end;
-  padding: 20px;
-}
-
-.main__section--text-content-r h4 {
-  text-decoration: underline overline;
-}
-
-.mian__section--producto--picture-r img {
-  width: 300px;
-  height: 300px;
+.main__section--text-content p {
+  text-align: start;
 }
 
 /* ESTILOS GRIALLAS DE IMAGENES */

@@ -1,14 +1,20 @@
 /* ESTILOS INDEX */
-#main .pie-img p{
-    margin: 30px 50px 30px 50px;
-}
-
-#main .pie-img p a{
-    text-decoration: underline;
-}
-
-#main .main-muestra img {
-    width: 200px;
-    margin-bottom: 10px;
-    margin: 10px;
+#main {
+    .pie-img {
+        /* txt de bienvenida */
+        p {
+            margin: 30px 50px 30px 50px;
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    .main-muestra {
+        /* img de mustra */
+        img {
+            width: 200px;
+            margin: 10px;
+            margin-bottom: 10px;
+        }
+    }
 }

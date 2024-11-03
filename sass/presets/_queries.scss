@@ -35,26 +35,25 @@
 
 /* MEDIA MENU */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .main__section {
         flex-direction: column;
+        justify-content: center;
     }
-    
     .mian__section--producto {
         flex-direction: column;
         align-items: center;
     }
     
-    .main__section--text-content {
+    .mian__section--producto--picture {
+        align-items: center;
+    }
+
+    .main__section--text-content h4 {
         text-align: center;
     }
 
-    .mian__section--producto-r {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .main__section--text-content-r {
+    .main__section--text-content p {
         text-align: center;
     }
 }
