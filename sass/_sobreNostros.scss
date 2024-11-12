@@ -1,0 +1,100 @@
+.main__sobre-nostros {
+    padding: 40px;
+    background-color: #503c2f21;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    h2 {
+        font-size: 2rem;
+        color: #503c2f;
+        margin-bottom: 20px;
+    }
+
+    p, ul {
+        font-size: 1.2rem;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+                content: '•';
+                color: #503c2f;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+
+    &--equipo {
+        img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: #503c2f81;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-top: 10px;
+        }
+    }
+
+    &--destacados {
+        display: flex;
+        justify-content: space-around; /* quisiera que las img del destacado se vean una al lado de la otra en horizonal pero no encuentro la forma */
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    figure {
+        text-align: center;
+        margin: 0;
+    }
+
+    img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    figcaption {
+        font-size: 1rem;
+        color: #503c2f;
+        margin-top: 10px;
+    }
+    
+    &--testimonios {
+        blockquote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #666;
+            border-left: 5px solid #503c2f;
+            padding-left: 10px;
+            margin: 20px 0;
+        }
+    }
+
+    &--contacto {
+        p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+    }
+}
+

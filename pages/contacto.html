@@ -43,45 +43,57 @@
             </nav>
         </header>
     <!-- MAiN -->
-        <main id="main">
-            <h2>Contacto</h2>
-            <p>En Santichy estamos aquí para ayudarte. Completa el formulario a continuación o utiliza la información de contacto para comunicarte con nosotros.</p>
-
-            <h3>Información de Contacto</h3>
-            <p>Dirección: Calle Falsa 123, La Plata, Buenos Aires</p>
-            <p>Teléfono: +54 123 456 7890</p>
-            <p>Correo Electrónico: contacto@santichy.com</p>
-
-            <h3>Horario de Atención</h3>
-            <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-            <p>Sábados: 10:00 AM - 4:00 PM</p>
-
-            <h3>Formulario de Contacto</h3>
-                <form>
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre"><br>
-                    <label for="email">Correo Electrónico:</label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="mensaje">Mensaje:</label><br>
-                    <textarea id="mensaje" name="mensaje"></textarea><br>
-                    <input type="submit" value="Enviar">
-                </form>
-
-            <h3>Encuéntranos en</h3>
-            <p><a href="">Instagram</a> | <a href="">TikTok</a> | <a href="">Whatsapp</a></p>
-
-            <h3>Mapa de Ubicación</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-58.013537684681!3d-34.921451980379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2sCalle%20Falsa%20123%2C%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1600000000000!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-        </main>
+    <main id="main">
+        <picture class="main-banner">
+            <img class="img-fluid" src="../images/sf.png" alt="">
+        </picture>
+        <section class="main__section-c box">
+            <h1 class="box">Contacto</h1>
+            <section class="main__section-c--info">
+                <p>En Santichy estamos para darte una mano con todo lo que necesites. Completá el formulario a continuación o usá la info de contacto para comunicarte con nosotros. Ya sea que tengas una pregunta, necesites asistencia con un pedido, o simplemente quieras dejarnos tus comentarios, estamos acá para escucharte. Queremos asegurarnos de que tu experiencia con nosotros sea la mejor posible, así que no dudes en alcanzarnos. ¡Gracias por elegir Santichy, estamos para ayudarte!</p>
+                <h3>Información de Contacto</h3>
+                <p>Dirección: Calle Falsa 123, La Plata, Buenos Aires</p>
+                <p>Teléfono: +54 123 456 7890</p>
+                <p>Correo Electrónico: contacto@santichy.com</p>
+                <h3>Horario de Atención</h3>
+                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                <p>Sábados: 10:00 AM - 4:00 PM</p>
+                <section class="main__section-c--form box">
+                    <h3>Formulario de Contacto</h3>
+                    <form>
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre"><br>
+                        <label for="email">Correo Electrónico:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje"></textarea><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                    <h3>Encontranos en</h3>
+                    <p><a href="https://www.instagram.com/sfbakery_/">Instagram</a> | <a href="https://www.tiktok.com/@sfbakery_">TikTok</a> | <a href="https://wa.me/2215931167">Whatsapp</a></p>
+                    <h3>Mapa de Ubicación</h3>
+                    <div class="iframe-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52936.92606768797!2d-58.04461054874954!3d-34.92145232161157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e624657730d5%3A0x7b1fd6ae3e6db8e3!2sLa%20Plata%2C%20Buenos%20Aires%20Province%2C%20Argentina!5e0!3m2!1sen!2sus!4v1688782756378!5m2!1sen!2sus" 
+                            frameborder="0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    
         <!-- FOOTER -->
         <footer id="footer">
             <section class="footer-logo">
-                <img src="icons/Favicon.png" alt="">
+                <img src="../icons/Favicon.png" alt="">
             </section>
             
             <section class="footer-links">
-                <ul>
+                <ul class="footer__links--nav-list">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="aTuGusto.html">A tu gusto</a></li>
@@ -97,8 +109,8 @@
             
             <section class="footer-redes">
                 <a href="https://www.instagram.com/sfbakery_/"><img src="../icons/instagram-icon.svg" alt=""></a>
-                <a href="https://www.tiktok.com/@sfbakery_"><img src="icons/tiktok-brands-solid.svg" alt=""></a>
-                <img src="../icons/whatsapp-icon.svg" alt="">
+                <a href="https://wa.me/2215931167"><img class="img-fluid" src="../icons/whatsapp-icon.svg" alt=""></a>
+                <a href="https://www.tiktok.com/@sfbakery_"><img src="../icons/tiktok-brands-solid.svg" alt=""></a>
             </section>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

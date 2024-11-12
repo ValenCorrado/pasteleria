@@ -1,17 +1,128 @@
+.main__section-g {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px 0;
+
+    &--producto {
+        display: flex;
+        align-items: flex-start;
+        border: 2px solid #503c2f;
+        border-radius: 10px;
+        padding: 20px;
+        width: 75%;
+
+    &--picture {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+
+            img {
+            width: 100%;
+                min-width: 160px;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+
+    &--text-content {
+        display: block;
+        text-align: start;
+        padding: 20px;
+
+        h2 {
+            text-decoration: underline overline;
+            padding-bottom: 20px;
+        }
+
+        p {
+            text-align: start;
+        }
+    }
+}
+
+/* ESTILO PARA EL FROM */
+.main__section-g--from {
+    border: 1px solid #503c2f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 75%;
+    margin: 0 auto;
+    background-color: #ffedd3de;
+
+    /* ESTILO PARA LA ETIQUETA */
+    &-label {
+        font-size: 1rem;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* ESTILOS PARA EL INPUT */
+    &-input {
+        margin-bottom: 10px;
+        padding: 6px;
+        border: 1px solid #503c2f;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    /* ESTILOS PARA EL BOTON */
+    &-button {
+        background-color: #503c2f;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+
+        &:hover {
+            background-color: #503c2fb6;
+        }
+    }
+}
+
+
+/* CLASES BTS */
+.main__section-g--carousel {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+
+    img {
+        width: 100%;
+        min-width: 200px;
+        height: auto;
+        display: block;
+    }
+}
+
+
 /* ESTILOS GRIALLAS DE IMAGENES */
 
 .section__grid {
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;               /* Asegura que el grid esté centrado */
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
     grid-template-areas: 
-        "torta1 torta2 torta2 torta3"
-        "torta4-v torta6 torta8 torta5-v"
-        "torta4-v torta6 torta7 torta5-v"
+        "grid_1      grid_1-horz grid_1-horz    grid_2"
+        "grid_1-vert    grid_3     grid_4       grid_2-vert"
+        "grid_1-vert    grid_5     grid_6       grid_2-vert"
+        "grid_7      grid_2-horz grid_2-horz    grid_8"
     ;
     padding: 20px 0px 20px 0px;
     gap: 20px;
@@ -24,29 +135,50 @@
     object-fit: cover;
 }
 
-.torta1{
-    grid-area: torta1;
-    background-image: url("images/torta1.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100%;
+.grid_1{
+    grid-area: grid_1;
 }
 
-.torta2{
-    grid-area: torta2;
-    background-image: url("images/torta1.jpg");
-    background-size: cover;
-    
+.grid_2{
+    grid-area: grid_2;
 }
 
-.torta3{
-    grid-area: torta3;
+.grid_3{
+    grid-area: grid_3;
 }
 
-.torta4-v{
-    grid-area: torta4-v;
+.grid_4{
+    grid-area: grid_4;
 }
 
-.torta5-v{
-    grid-area: torta5-v;
+.grid_5{
+    grid-area: grid_5;
+}
+
+.grid_6{
+    grid-area: grid_6;
+}
+
+.grid_7{
+    grid-area: grid_7;
+}
+
+.grid_8{
+    grid-area: grid_8;
+}
+
+.grid_1-horz{
+    grid-area: grid_1-horz;
+}
+
+.grid_2-horz{
+    grid-area: grid_2-horz;
+}
+
+.grid_1-vert{
+    grid-area: grid_1-vert;
+}
+
+.grid_2-vert{
+    grid-area: grid_2-vert;
 }

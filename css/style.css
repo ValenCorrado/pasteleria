@@ -41,6 +41,21 @@ a {
   color: inherit;
 }
 
+/* BTS NAVBAR */
+.navbar-collapse {
+  width: 100%;
+  max-height: 400px;
+  background-color: rgba(80, 60, 47, 0.7254901961);
+}
+
+.box {
+  background-color: rgba(80, 60, 47, 0.2392156863);
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
 /* ESTILOS NAVBAR/HEADER */
 #header {
   max-width: 2000px;
@@ -111,7 +126,7 @@ a {
 .footer-links ul li {
   display: inline-block;
   list-style: none;
-  font-size: 24px;
+  font-size: 2rem;
   margin-right: 5px;
 }
 
@@ -120,25 +135,264 @@ a {
   margin-left: 10px;
 }
 
+.footer-redes a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-redes a:hover {
+  transform: scale(1.2); /* Aumenta el tamaño del icono al pasar el cursor */
+  filter: brightness(1.2); /* Aumenta el brillo del icono al pasar el cursor */
+}
+
+.footer__links--nav-list {
+  display: flex;
+}
+.footer__links--nav-list li {
+  display: inline-block;
+}
+.footer__links--nav-list li a {
+  color: #ffedd3; /* Color del texto */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.footer__links--nav-list li a:hover {
+  background-color: #da5903; /* Color de fondo al pasar el cursor */
+  color: #fff; /* Color del texto al pasar el cursor */
+}
+
 /* MEDIA NAVBAR FOOTER */
-@media screen and (max-width: 991px) {
-  .navbar-brand {
-    padding-left: 30px;
+@media screen and (max-width: 1100px) {
+  #navbarNav {
+    padding-left: 375px;
   }
 }
-@media screen and (max-width: 420px) {
+/* MEDIA A TU GUSTO */
+@media screen and (max-width: 992px) {
+  .main__section-g--producto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__section-g--producto .main__section-g--text-content {
+    order: 1;
+  }
+  .main__section-g--producto .main__section-g--carousel {
+    order: 2;
+  }
+  .main__section-g--producto .main__section-g--from {
+    order: 3;
+  }
+  .section__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    grid-template-areas: "grid_1-horz grid_1-horz" "grid_3      grid_4" "grid_5      grid_6" "grid_2-horz grid_2-horz";
+    border: 2px solid blue; /* Bordes temporales */
+  }
+}
+/* media bts navbar */
+@media screen and (max-width: 991px) {
+  #navbaNav {
+    padding-left: 50px; /* nose porque no me deja hacerlo desde aca, cuando lo hago desde el f12 puedo ponerle el padding y queda bien */
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__section-g {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__section-g--producto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__section-g--producto--picture {
+    order: 2;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__section-g--text-content {
+    order: 1;
+    text-align: center;
+  }
+  .main__section-g--text-content h2 {
+    text-align: center;
+  }
+  .main__section-g--text-content p {
+    text-align: center;
+  }
+  .main__section-g--from {
+    padding: 15px;
+    max-width: 100%;
+  }
+  .main__section-g--from-input,
+  .main__section-g--from-button {
+    width: 100%;
+    padding: 10px;
+  }
+  .section__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 300px);
+    grid-template-areas: "grid_1-horz" "grid_3" "grid_4" "grid_5" "grid_6" "grid_2-horz";
+    border: 2px solid green; /* Bordes temporales */
+  }
+}
+/* MEDIA MENU */
+@media screen and (max-width: 768px) {
+  .main__section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__section--producto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__section--producto--picture {
+    order: 2;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__section--text-content {
+    order: 1;
+    text-align: center;
+  }
+}
+/* MEDIA CONTACTO */
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  .main__section-c {
+    width: 90%;
+    padding: 10px;
+  }
+  .main__section-c--form, .main__section-c--info {
+    padding: 15px;
+  }
+}
+/* MEDIA SOBRE NOSTROS */
+@media screen and (max-width: 768px) {
+  .main__sobre-nostros {
+    padding: 20px;
+  }
+  .main__sobre-nostros h2 {
+    font-size: 1.5rem;
+  }
+  .main__sobre-nostros p, .main__sobre-nostros ul {
+    font-size: 1rem;
+  }
+  .main__sobre-nostros--equipo img {
+    width: 100px;
+    height: 100px;
+  }
+  .main__sobre-nostros--destacados {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* MEDIA FOOTER */
+@media screen and (max-width: 768px) {
+  #footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  .footer-links ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  .footer-redes {
+    margin-top: 20px;
+  }
+}
+/* MEDIA CONTACTO */
+@media screen and (max-width: 480px) {
+  .box {
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto 15px auto;
+  }
+  .main__section-c {
+    width: 100%;
+    padding: 5px;
+  }
+  .main__section-c--form, .main__section-c--info {
+    padding: 10px;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+/* MEDIA FROM aTuG */
+@media screen and (max-width: 480px) {
+  .main__section-g {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px 0;
+  }
+  .main__section-g--producto {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #503c2f;
+    padding: 20px;
+    width: 75%;
+  }
+  .main__section-g--from {
+    padding: 15px;
+    width: 90%;
+    border-width: 1px;
+  }
+  .main__section-g--from-label {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  .main__section-g--from-input {
+    padding: 5px;
+    margin-bottom: 8px;
+  }
+  .main__section-g--from-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+/* MEDIA SOBRE NOSOTROS */
+@media screen and (max-width: 480px) {
+  .main__sobre-nostros {
+    padding: 10px;
+  }
+  .main__sobre-nostros h2 {
+    font-size: 1.2rem;
+  }
+  .main__sobre-nostros p, .main__sobre-nostros ul {
+    font-size: 0.9rem;
+  }
+  .main__sobre-nostros--equipo img {
+    width: 80px;
+    height: 80px;
+  }
+  .main__sobre-nostros--destacados figure {
+    width: 100%;
+  }
+}
+/* MEDIA FOOTER */
+@media screen and (max-width: 456px) {
   #footer {
     width: 100%;
-    height: 190px;
+    height: 100%;
     background-color: #503c2f;
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-}
-@media screen and (max-width: 1100px) {
-  #navbarNav {
-    padding-left: 375px;
   }
 }
 /* MEDIA INDEX */
@@ -147,26 +401,6 @@ a {
     width: 150px;
     margin-bottom: 10px;
     margin: 10px;
-  }
-}
-/* MEDIA MENU */
-@media screen and (max-width: 768px) {
-  .main__section {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .mian__section--producto {
-    flex-direction: column;
-    align-items: center;
-  }
-  .mian__section--producto--picture {
-    align-items: center;
-  }
-  .main__section--text-content h4 {
-    text-align: center;
-  }
-  .main__section--text-content p {
-    text-align: center;
   }
 }
 /* ESTILOS INDEX */
@@ -225,7 +459,8 @@ a {
 .main__section--producto {
   display: flex;
   align-items: flex-start;
-  border: 1px solid #503c2f;
+  border: 2px solid #503c2f;
+  border-radius: 10px;
   padding: 20px;
   width: 75%;
 }
@@ -257,7 +492,105 @@ a {
   padding-bottom: 20px;
 }
 .main__section--text-content p {
+  color: #333;
   text-align: start;
+}
+
+.main__section-g {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 10px 0;
+}
+.main__section-g--producto {
+  display: flex;
+  align-items: flex-start;
+  border: 2px solid #503c2f;
+  border-radius: 10px;
+  padding: 20px;
+  width: 75%;
+}
+.main__section-g--producto--picture {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+.main__section-g--producto--picture img {
+  width: 100%;
+  min-width: 160px;
+  height: auto;
+  display: block;
+}
+.main__section-g--text-content {
+  display: block;
+  text-align: start;
+  padding: 20px;
+}
+.main__section-g--text-content h2 {
+  text-decoration: underline overline;
+  padding-bottom: 20px;
+}
+.main__section-g--text-content p {
+  text-align: start;
+}
+
+/* ESTILO PARA EL FROM */
+.main__section-g--from {
+  border: 1px solid #503c2f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(255, 237, 211, 0.8705882353);
+  /* ESTILO PARA LA ETIQUETA */
+  /* ESTILOS PARA EL INPUT */
+  /* ESTILOS PARA EL BOTON */
+}
+.main__section-g--from-label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.main__section-g--from-input {
+  margin-bottom: 10px;
+  padding: 6px;
+  border: 1px solid #503c2f;
+  border-radius: 5px;
+  width: 100%;
+}
+.main__section-g--from-button {
+  background-color: #503c2f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.main__section-g--from-button:hover {
+  background-color: rgba(80, 60, 47, 0.7137254902);
+}
+
+/* CLASES BTS */
+.main__section-g--carousel {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+.main__section-g--carousel img {
+  width: 100%;
+  min-width: 200px;
+  height: auto;
+  display: block;
 }
 
 /* ESTILOS GRIALLAS DE IMAGENES */
@@ -265,11 +598,11 @@ a {
   display: grid;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 75%;
   margin: 0 auto; /* Asegura que el grid esté centrado */
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 300px);
-  grid-template-areas: "torta1 torta2 torta2 torta3" "torta4-v torta6 torta8 torta5-v" "torta4-v torta6 torta7 torta5-v";
+  grid-template-rows: repeat(4, 300px);
+  grid-template-areas: "grid_1      grid_1-horz grid_1-horz    grid_2" "grid_1-vert    grid_3     grid_4       grid_2-vert" "grid_1-vert    grid_5     grid_6       grid_2-vert" "grid_7      grid_2-horz grid_2-horz    grid_8";
   padding: 20px 0px 20px 0px;
   gap: 20px;
 }
@@ -281,30 +614,229 @@ a {
   object-fit: cover;
 }
 
-.torta1 {
-  grid-area: torta1;
-  background-image: url("images/torta1.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+.grid_1 {
+  grid-area: grid_1;
+}
+
+.grid_2 {
+  grid-area: grid_2;
+}
+
+.grid_3 {
+  grid-area: grid_3;
+}
+
+.grid_4 {
+  grid-area: grid_4;
+}
+
+.grid_5 {
+  grid-area: grid_5;
+}
+
+.grid_6 {
+  grid-area: grid_6;
+}
+
+.grid_7 {
+  grid-area: grid_7;
+}
+
+.grid_8 {
+  grid-area: grid_8;
+}
+
+.grid_1-horz {
+  grid-area: grid_1-horz;
+}
+
+.grid_2-horz {
+  grid-area: grid_2-horz;
+}
+
+.grid_1-vert {
+  grid-area: grid_1-vert;
+}
+
+.grid_2-vert {
+  grid-area: grid_2-vert;
+}
+
+.main__section-c {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  margin: 20px auto 20px; /* Centrando horizontalmente */
+}
+.main__section-c--info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.main__section-c--info h3 {
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+.main__section-c--info p {
+  color: #333;
+  text-align: center;
+}
+.main__section-c--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: auto;
+}
+.main__section-c--form form {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.main__section-c--form form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+.main__section-c--form form input[type=text],
+.main__section-c--form form input[type=email],
+.main__section-c--form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.main__section-c--form form input[type=text]::placeholder,
+.main__section-c--form form input[type=email]::placeholder,
+.main__section-c--form form textarea::placeholder {
+  color: #aaa;
+}
+.main__section-c--form form input[type=submit] {
+  background-color: #503c2f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.main__section-c--form form input[type=submit]:hover {
+  background-color: rgba(80, 60, 47, 0.5058823529);
+}
+.main__section-c--form form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  border: 0;
 }
 
-.torta2 {
-  grid-area: torta2;
-  background-image: url("images/torta1.jpg");
-  background-size: cover;
+.main__sobre-nostros {
+  padding: 40px;
+  background-color: rgba(80, 60, 47, 0.1294117647);
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.torta3 {
-  grid-area: torta3;
+.main__sobre-nostros h2 {
+  font-size: 2rem;
+  color: #503c2f;
+  margin-bottom: 20px;
 }
-
-.torta4-v {
-  grid-area: torta4-v;
+.main__sobre-nostros p, .main__sobre-nostros ul {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
-
-.torta5-v {
-  grid-area: torta5-v;
+.main__sobre-nostros ul {
+  list-style: none;
+  padding-left: 0;
+}
+.main__sobre-nostros ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+.main__sobre-nostros ul li::before {
+  content: "•";
+  color: #503c2f;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main__sobre-nostros--equipo img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(80, 60, 47, 0.5058823529);
+}
+.main__sobre-nostros--equipo p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+}
+.main__sobre-nostros--destacados {
+  display: flex;
+  justify-content: space-around; /* quisiera que las img del destacado se vean una al lado de la otra en horizonal pero no encuentro la forma */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main__sobre-nostros figure {
+  text-align: center;
+  margin: 0;
+}
+.main__sobre-nostros img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+.main__sobre-nostros figcaption {
+  font-size: 1rem;
+  color: #503c2f;
+  margin-top: 10px;
+}
+.main__sobre-nostros--testimonios blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #666;
+  border-left: 5px solid #503c2f;
+  padding-left: 10px;
+  margin: 20px 0;
+}
+.main__sobre-nostros--contacto p {
+  font-size: 1.2rem;
+  color: #333;
 }
 
 /*# sourceMappingURL=style.css.map */
